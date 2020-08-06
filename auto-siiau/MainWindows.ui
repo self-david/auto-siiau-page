@@ -1,0 +1,1306 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1020</width>
+    <height>560</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="iconSize">
+   <size>
+    <width>30</width>
+    <height>30</height>
+   </size>
+  </property>
+  <property name="animated">
+   <bool>true</bool>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QWidget" name="widget" native="true">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>1020</width>
+      <height>560</height>
+     </rect>
+    </property>
+    <widget class="QTabWidget" name="tabWidget">
+     <property name="geometry">
+      <rect>
+       <x>140</x>
+       <y>50</y>
+       <width>880</width>
+       <height>505</height>
+      </rect>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>251</width>
+       <height>0</height>
+      </size>
+     </property>
+     <property name="currentIndex">
+      <number>0</number>
+     </property>
+     <widget class="QWidget" name="tabDatosGenerales">
+      <attribute name="title">
+       <string>Datos generales</string>
+      </attribute>
+      <widget class="QPushButton" name="btnFoto">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>10</y>
+         <width>150</width>
+         <height>150</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>FOTO</string>
+       </property>
+      </widget>
+      <widget class="QFrame" name="frameData1">
+       <property name="geometry">
+        <rect>
+         <x>189</x>
+         <y>10</y>
+         <width>771</width>
+         <height>150</height>
+        </rect>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::StyledPanel</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Raised</enum>
+       </property>
+       <widget class="QFrame" name="frameTL">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>0</y>
+          <width>340</width>
+          <height>75</height>
+         </rect>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+        <widget class="QLabel" name="label_23">
+         <property name="geometry">
+          <rect>
+           <x>50</x>
+           <y>12</y>
+           <width>91</width>
+           <height>50</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>PROMEDIO:</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="getPromedio">
+         <property name="geometry">
+          <rect>
+           <x>150</x>
+           <y>12</y>
+           <width>171</width>
+           <height>50</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Promedio</string>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QFrame" name="frameBL">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>75</y>
+          <width>340</width>
+          <height>75</height>
+         </rect>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+        <widget class="QLabel" name="getSituacion">
+         <property name="geometry">
+          <rect>
+           <x>150</x>
+           <y>12</y>
+           <width>171</width>
+           <height>50</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>situacion</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_22">
+         <property name="geometry">
+          <rect>
+           <x>50</x>
+           <y>12</y>
+           <width>91</width>
+           <height>50</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>SITUACION:</string>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QFrame" name="frameTR">
+        <property name="geometry">
+         <rect>
+          <x>340</x>
+          <y>0</y>
+          <width>331</width>
+          <height>75</height>
+         </rect>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+        <widget class="QLabel" name="getAdmicion">
+         <property name="geometry">
+          <rect>
+           <x>190</x>
+           <y>12</y>
+           <width>110</width>
+           <height>50</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Fecha admision</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_24">
+         <property name="geometry">
+          <rect>
+           <x>60</x>
+           <y>12</y>
+           <width>121</width>
+           <height>50</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>ADMISION:</string>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QFrame" name="frameBR">
+        <property name="geometry">
+         <rect>
+          <x>340</x>
+          <y>75</y>
+          <width>331</width>
+          <height>75</height>
+         </rect>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+        <widget class="QLabel" name="getUltimoCiclo">
+         <property name="geometry">
+          <rect>
+           <x>190</x>
+           <y>12</y>
+           <width>110</width>
+           <height>50</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>ULTIMO CICLO:</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_25">
+         <property name="geometry">
+          <rect>
+           <x>60</x>
+           <y>12</y>
+           <width>121</width>
+           <height>50</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>ULTIMO CICLO:</string>
+         </property>
+        </widget>
+       </widget>
+      </widget>
+      <widget class="QFrame" name="frameData2">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>180</y>
+         <width>951</width>
+         <height>301</height>
+        </rect>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::StyledPanel</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Raised</enum>
+       </property>
+       <widget class="QLabel" name="getCede">
+        <property name="geometry">
+         <rect>
+          <x>90</x>
+          <y>240</y>
+          <width>761</width>
+          <height>60</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>sede</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="getCodigo">
+        <property name="geometry">
+         <rect>
+          <x>90</x>
+          <y>60</y>
+          <width>761</width>
+          <height>60</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>codigo</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="getCarrera">
+        <property name="geometry">
+         <rect>
+          <x>90</x>
+          <y>120</y>
+          <width>761</width>
+          <height>60</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>carrera</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_20">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>180</y>
+          <width>80</width>
+          <height>60</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Centro:</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="getCentro">
+        <property name="geometry">
+         <rect>
+          <x>90</x>
+          <y>180</y>
+          <width>761</width>
+          <height>60</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>centro</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_19">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>120</y>
+          <width>80</width>
+          <height>60</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Carrera:</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="getNombre">
+        <property name="geometry">
+         <rect>
+          <x>90</x>
+          <y>0</y>
+          <width>761</width>
+          <height>60</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>nombre</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_18">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>60</y>
+          <width>80</width>
+          <height>60</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Codigo:</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="lblNombre">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>0</y>
+          <width>80</width>
+          <height>60</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Nombre:</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="lblSede">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>240</y>
+          <width>80</width>
+          <height>60</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Sede:</string>
+        </property>
+       </widget>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="tabKardex">
+      <attribute name="title">
+       <string>kardex</string>
+      </attribute>
+      <widget class="QTableWidget" name="tableWidgetKardex">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>20</y>
+         <width>850</width>
+         <height>450</height>
+        </rect>
+       </property>
+       <column>
+        <property name="text">
+         <string>NRC</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>CLAVE</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>NOMBRE</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>CALIFICACION</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>APROBADO</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>TIPO</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>NC</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>FECHA</string>
+        </property>
+       </column>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="tabMaterias">
+      <attribute name="title">
+       <string>materias</string>
+      </attribute>
+      <widget class="QTableWidget" name="tableWidgetMateriasActuales">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>20</y>
+         <width>850</width>
+         <height>450</height>
+        </rect>
+       </property>
+       <column>
+        <property name="text">
+         <string>NRC</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>CLAVE</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>NOMBRE</string>
+        </property>
+       </column>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="tabCursos">
+      <attribute name="title">
+       <string>Cursos</string>
+      </attribute>
+      <widget class="QTableWidget" name="tableWidgetRestantes">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>20</y>
+         <width>850</width>
+         <height>450</height>
+        </rect>
+       </property>
+       <column>
+        <property name="text">
+         <string>CLAVE</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>MATERIA</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>CREDITOS</string>
+        </property>
+       </column>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="tabOferta">
+      <attribute name="title">
+       <string>Oferta</string>
+      </attribute>
+      <widget class="QComboBox" name="comboBoxCiclo">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>20</y>
+         <width>241</width>
+         <height>30</height>
+        </rect>
+       </property>
+       <property name="cursor">
+        <cursorShape>ArrowCursor</cursorShape>
+       </property>
+      </widget>
+      <widget class="QComboBox" name="comboBoxCentro">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>80</y>
+         <width>241</width>
+         <height>30</height>
+        </rect>
+       </property>
+       <property name="cursor">
+        <cursorShape>ArrowCursor</cursorShape>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="lineEditCarrera">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>140</y>
+         <width>221</width>
+         <height>30</height>
+        </rect>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="lineEditClave">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>200</y>
+         <width>221</width>
+         <height>30</height>
+        </rect>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="lineEditProfesor">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>260</y>
+         <width>221</width>
+         <height>30</height>
+        </rect>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="btnSearchOferta">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>380</y>
+         <width>240</width>
+         <height>40</height>
+        </rect>
+       </property>
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="text">
+        <string>BUSCAR</string>
+       </property>
+      </widget>
+      <widget class="QTableWidget" name="tableWidgetOferta">
+       <property name="geometry">
+        <rect>
+         <x>280</x>
+         <y>20</y>
+         <width>581</width>
+         <height>451</height>
+        </rect>
+       </property>
+       <column>
+        <property name="text">
+         <string>NRC</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>CLAVE</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>MATERIA</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>DISP</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>PROFESOR</string>
+        </property>
+       </column>
+      </widget>
+      <widget class="QPushButton" name="btnSearchOfertaA">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>430</y>
+         <width>110</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Anterior</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="btnSearchOfertaS">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+       <property name="geometry">
+        <rect>
+         <x>140</x>
+         <y>430</y>
+         <width>110</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Siguiente</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="tabRegistro">
+      <attribute name="title">
+       <string>Registro</string>
+      </attribute>
+      <widget class="QLineEdit" name="lineCve1">
+       <property name="geometry">
+        <rect>
+         <x>290</x>
+         <y>20</y>
+         <width>90</width>
+         <height>30</height>
+        </rect>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="lineCve2">
+       <property name="geometry">
+        <rect>
+         <x>410</x>
+         <y>20</y>
+         <width>90</width>
+         <height>30</height>
+        </rect>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="lineCve3">
+       <property name="geometry">
+        <rect>
+         <x>530</x>
+         <y>20</y>
+         <width>90</width>
+         <height>30</height>
+        </rect>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="lineCve4">
+       <property name="geometry">
+        <rect>
+         <x>650</x>
+         <y>20</y>
+         <width>90</width>
+         <height>30</height>
+        </rect>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="lineCve5">
+       <property name="geometry">
+        <rect>
+         <x>770</x>
+         <y>20</y>
+         <width>90</width>
+         <height>30</height>
+        </rect>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="lineCve6">
+       <property name="geometry">
+        <rect>
+         <x>290</x>
+         <y>70</y>
+         <width>90</width>
+         <height>30</height>
+        </rect>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="lineCve7">
+       <property name="geometry">
+        <rect>
+         <x>410</x>
+         <y>70</y>
+         <width>90</width>
+         <height>30</height>
+        </rect>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="lineCve8">
+       <property name="geometry">
+        <rect>
+         <x>530</x>
+         <y>70</y>
+         <width>90</width>
+         <height>30</height>
+        </rect>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="lblMessage">
+       <property name="geometry">
+        <rect>
+         <x>289</x>
+         <y>110</y>
+         <width>571</width>
+         <height>40</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="lineCve9">
+       <property name="geometry">
+        <rect>
+         <x>650</x>
+         <y>70</y>
+         <width>90</width>
+         <height>30</height>
+        </rect>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="lineCve10">
+       <property name="geometry">
+        <rect>
+         <x>770</x>
+         <y>70</y>
+         <width>90</width>
+         <height>30</height>
+        </rect>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QComboBox" name="comboBoxCentro_2">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>20</y>
+         <width>220</width>
+         <height>30</height>
+        </rect>
+       </property>
+       <property name="cursor">
+        <cursorShape>ArrowCursor</cursorShape>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="btnRegistro">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>100</y>
+         <width>221</width>
+         <height>40</height>
+        </rect>
+       </property>
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="text">
+        <string>REGISTRO</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="btnRegistroCive">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>160</y>
+         <width>221</width>
+         <height>40</height>
+        </rect>
+       </property>
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="text">
+        <string>REGISTRO CIVE</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="btnRegistroMovilidad">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>220</y>
+         <width>221</width>
+         <height>40</height>
+        </rect>
+       </property>
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="text">
+        <string>REGISTRO MOVILIDAD</string>
+       </property>
+      </widget>
+      <widget class="QTableWidget" name="tableWidgetMateriasNuevas">
+       <property name="enabled">
+        <bool>true</bool>
+       </property>
+       <property name="geometry">
+        <rect>
+         <x>280</x>
+         <y>160</y>
+         <width>580</width>
+         <height>290</height>
+        </rect>
+       </property>
+       <column>
+        <property name="text">
+         <string>NRC</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>CLAVE</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>NOMBRE</string>
+        </property>
+       </column>
+      </widget>
+      <widget class="QPushButton" name="btnOn">
+       <property name="enabled">
+        <bool>true</bool>
+       </property>
+       <property name="geometry">
+        <rect>
+         <x>60</x>
+         <y>330</y>
+         <width>60</width>
+         <height>60</height>
+        </rect>
+       </property>
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="text">
+        <string>ON</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="btnOff">
+       <property name="geometry">
+        <rect>
+         <x>120</x>
+         <y>330</y>
+         <width>60</width>
+         <height>60</height>
+        </rect>
+       </property>
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="text">
+        <string>OFF</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label">
+       <property name="geometry">
+        <rect>
+         <x>60</x>
+         <y>290</y>
+         <width>121</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Modo Turbo</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="btnStop">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+       <property name="geometry">
+        <rect>
+         <x>200</x>
+         <y>410</y>
+         <width>40</width>
+         <height>40</height>
+        </rect>
+       </property>
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="text">
+        <string>STOP</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="lblTurbo">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+       <property name="geometry">
+        <rect>
+         <x>24</x>
+         <y>410</y>
+         <width>171</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Modo Turbo Activado</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="lblDataTurbo">
+       <property name="geometry">
+        <rect>
+         <x>280</x>
+         <y>450</y>
+         <width>581</width>
+         <height>40</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QComboBox" name="comboBoxCiclo_2">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>60</y>
+         <width>220</width>
+         <height>30</height>
+        </rect>
+       </property>
+       <property name="cursor">
+        <cursorShape>ArrowCursor</cursorShape>
+       </property>
+      </widget>
+     </widget>
+    </widget>
+    <widget class="QFrame" name="frameMenu">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>50</y>
+       <width>140</width>
+       <height>510</height>
+      </rect>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <widget class="QComboBox" name="comboBoxCarreras">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>260</y>
+        <width>140</width>
+        <height>40</height>
+       </rect>
+      </property>
+      <property name="cursor">
+       <cursorShape>ArrowCursor</cursorShape>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btnRegistro_">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>210</y>
+        <width>140</width>
+        <height>40</height>
+       </rect>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="text">
+       <string>Registro</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btnOferta">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>170</y>
+        <width>140</width>
+        <height>40</height>
+       </rect>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="text">
+       <string>Oferta</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btnKardex">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>50</y>
+        <width>140</width>
+        <height>40</height>
+       </rect>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="text">
+       <string>Kardex</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btnDatos">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>10</y>
+        <width>140</width>
+        <height>40</height>
+       </rect>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="text">
+       <string>Datos Generales</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btnMaterias">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>90</y>
+        <width>140</width>
+        <height>40</height>
+       </rect>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="text">
+       <string>Boleta</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btnCloseSeccion">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>461</y>
+        <width>140</width>
+        <height>50</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Cerrar
+Seccion</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="barra">
+      <property name="geometry">
+       <rect>
+        <x>130</x>
+        <y>0</y>
+        <width>10</width>
+        <height>60</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap>img/barra.png</pixmap>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btnCursos">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>130</y>
+        <width>140</width>
+        <height>40</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Cursos Posibles</string>
+      </property>
+     </widget>
+     <zorder>btnCursos</zorder>
+     <zorder>btnRegistro_</zorder>
+     <zorder>btnOferta</zorder>
+     <zorder>btnKardex</zorder>
+     <zorder>btnDatos</zorder>
+     <zorder>btnMaterias</zorder>
+     <zorder>btnCloseSeccion</zorder>
+     <zorder>barra</zorder>
+     <zorder>comboBoxCarreras</zorder>
+    </widget>
+    <widget class="QFrame" name="frameTop">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>1020</width>
+       <height>50</height>
+      </rect>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <widget class="QPushButton" name="btnClose">
+      <property name="geometry">
+       <rect>
+        <x>980</x>
+        <y>10</y>
+        <width>30</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>img/close.png</normaloff>img/close.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>30</width>
+        <height>30</height>
+       </size>
+      </property>
+     </widget>
+     <widget class="QLabel" name="title">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>0</y>
+        <width>231</width>
+        <height>50</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>REGISTRO OUT-TIME V-3.5.8</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="logo">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>10</y>
+        <width>30</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btnMinimize">
+      <property name="geometry">
+       <rect>
+        <x>940</x>
+        <y>10</y>
+        <width>30</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>img/minimize.png</normaloff>img/minimize.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>30</width>
+        <height>30</height>
+       </size>
+      </property>
+     </widget>
+    </widget>
+    <zorder>frameMenu</zorder>
+    <zorder>frameTop</zorder>
+    <zorder>tabWidget</zorder>
+   </widget>
+  </widget>
+  <action name="actionCerrar_Sesion">
+   <property name="text">
+    <string>Cerrar Sesion</string>
+   </property>
+  </action>
+  <action name="actionotro">
+   <property name="text">
+    <string>otro</string>
+   </property>
+  </action>
+  <action name="actionFoto">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Foto</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
