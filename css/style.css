@@ -9,7 +9,7 @@ QWidget {
 	background: #F5F4F6;
 }
 
- #widget {
+#widget {
 	background: #1D222F;
 	border-radius: 10px;
  }
@@ -60,7 +60,6 @@ QWidget {
 	border-radius: 0px;
 }
 
-
 /*********************************************************************************/
 /*********************************************************************************/
 /********************************** PUSH BUTTON **********************************/
@@ -75,18 +74,25 @@ QPushButton {
 	border-radius: 10px;
 }
 
+#btnClose, #btnMinimize {
+	background: transparent;
+	color: red;
+	font-size: 35px;
+	border: none;
+}
 
-#btnClose, #btnLink, #btnMinimize { background: transparent; border: none; }
+#btnMinimize {
+	color: white;
+}
 
-
-
-#btnLink {
-	font-size: 15px;
-	color: #FF3636;
+#btnClose::hover {
+	font-size: 39px;	
 }
 
 
-#btnLogin, #frameMenu > QPushButton {
+
+
+#frameMenu > QPushButton {
 	background: transparent;
 	color: white;
 	border-radius: 20px;
@@ -101,13 +107,6 @@ QPushButton {
 	border-bottom: 1px solid grey;
 	border-radius: 4px;
 	font-size: 14px;
-}
-
-#btnLogin::hover {
-	font-size: 26px;
-	background-color: white;
-	color: #1D222F;
-	border: none;
 }
 
 #frameMenu > QPushButton::hover { font-size: 16px; }
@@ -189,18 +188,6 @@ QLabel {
 	font-size: 17px; 
 }
 
-
-#lblLogo {
-	font-family: "Arial", Helvetica, sans-serif;
-	font-style: inherit;
-	font-size: 60px;
-	color: white;
-	text-align: center;
-    font-weight: bold;
-    background: transparent;
-}
-
-
 #getNombre, #getCarrera, #getCede, #getCentro, #getCodigo,
 #getSituacion, #getUltimoCiclo, #getPromedio, #getAdmicion {
 	text-decoration: underline;
@@ -265,8 +252,6 @@ QComboBox::drop-down { image: url(img/drop-b.png);
 /*********************************************************************************/
 /*********************************************************************************/
 
-
-
 QLineEdit {
 	background: transparent;
 	color: black;
@@ -277,14 +262,6 @@ QLineEdit {
 	border-top: none;
 	text-align: center;
 }
-
-#lineEditCode, #lineEditPass {
-	font-size: 20px;
-	padding-left: 10px;
-	color: white;
-	border-bottom: 2px solid grey;
-}
-
 
 /*********************************************************************************/
 /*********************************************************************************/
