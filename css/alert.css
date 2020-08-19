@@ -1,0 +1,42 @@
+#body {
+	background: #F8D7DA;
+	border-radius: 8px;
+	border: 1px solid #F1C3C8
+}
+
+#text, #title{
+	color: #861C24;
+}
+
+#title {
+	font-size: 22px;
+}
+
+#text {
+	font-size: 17px;
+}
+
+#btnClose {
+	background: transparent;
+	color: #861C24;
+	font-size: 35px;
+}
+
+#btnClose::hover {
+	font-size: 39px;	
+}
+
+#ok {
+	border-radius: 8px;
+	background: #C82333;
+	color: white;
+	font-size: 21px;
+}
+
+#ok::hover {
+	font-size: 23px;
+}
+
+#hr {
+	background: #861C24;
+}

@@ -1,0 +1,439 @@
+/*********************************************************************************/
+/*********************************************************************************/
+/************************************** FRAME ************************************/
+/*********************************************************************************/
+/*********************************************************************************/
+
+
+QWidget {
+	background: #F5F4F6;
+}
+
+#widget {
+	background: #1D222F;
+	border-radius: 10px;
+ }
+
+#centralwidget {
+	border-radius: 10px;
+}
+
+#centralwidget > #widget {
+	background: #F5F4F6;
+	border-radius: 9px;
+}
+
+
+#frameMenu {
+	border: none;
+	background-color: #1D222F;
+	border-bottom-left-radius: 8px;
+}
+
+
+#tabWidget::pane {
+	/*border: 1px solid white;*/
+}
+
+#frameData1 > QFrame, #frameData2 > QFrame {
+	border: 1px solid grey;
+}
+
+#frameTL,  #lblNombre { border-top-left-radius: 10px; }
+#frameTR, #getNombre { border-top-right-radius: 10px; }
+#frameBL, #lblSede { border-bottom-left-radius: 10px; }
+#frameBR, #getCede { border-bottom-right-radius: 10px; }
+
+#frameTop {
+	background-color: #444;
+	border-top-left-radius: 8px;
+	border-top-right-radius: 8px;
+}
+
+#title {
+	background-color: transparent;
+	color: white;
+}
+#logo {
+	background-color: transparent;
+	border: none;
+	border-radius: 0px;
+}
+
+/*********************************************************************************/
+/*********************************************************************************/
+/********************************** PUSH BUTTON **********************************/
+/*********************************************************************************/
+/*********************************************************************************/
+ 
+QPushButton {
+	background: white;
+	color: white;
+	background-color: transparent;
+	border: 2px solid white;
+	border-radius: 10px;
+}
+
+#btnClose, #btnMinimize {
+	background: transparent;
+	color: red;
+	font-size: 35px;
+	border: none;
+}
+
+#btnMinimize {
+	color: white;
+}
+
+#btnClose::hover {
+	font-size: 39px;	
+}
+
+
+
+
+#frameMenu > QPushButton {
+	background: transparent;
+	color: white;
+	border-radius: 20px;
+	font-family: "Arial", Helvetica, sans-serif;
+	font-size: 25px;
+	font-style: inherit;
+    font-weight: bold;
+}
+
+#frameMenu > QPushButton {
+	border: none;
+	border-bottom: 1px solid grey;
+	border-radius: 4px;
+	font-size: 14px;
+}
+
+#frameMenu > QPushButton::hover { font-size: 16px; }
+
+
+
+#btnSearchOferta, #btnSearchOfertaA, #btnSearchOfertaS,
+#btnRegistro, #btnRegistroCive, #btnRegistroMovilidad {
+	color: #1D222F;
+	border: 2px solid #1D222F;
+	border-radius: 20px;
+	font-size: 16px;
+	
+}
+
+#btnSearchOferta::hover, #btnSearchOfertaA::hover, #btnSearchOfertaS::hover,
+#btnRegistro::hover, #btnRegistroCive::hover, #btnRegistroMovilidad::hover {
+    background: #1D222F;
+    color: #F5F4F6;
+    border: none;
+    font-weight: bold;
+}
+
+#btnSearchOfertaA::disabled, #btnSearchOfertaS::disabled {
+	color: grey;
+	border: 2px solid grey;
+}
+
+#btnFoto {
+	background-color: white;
+	border:none;
+	border-radius: 75px;
+}
+
+
+#btnOn {
+	border: none;
+	color: white;
+	border-top-right-radius: 0px;
+	border-bottom-right-radius: 0px;
+	background: #BDBDBD;
+	border-right: none;
+	font-size: 18px;
+}
+
+#btnOff {
+	border: none;
+	color: white;
+	border-top-left-radius: 0px;
+	border-bottom-left-radius: 0px;
+	background: red;
+	border-left: none;
+	font-size: 18px;
+}
+
+#btnStop {
+	background: red;
+	border: none;
+	color: white;
+	border-radius: 20px;
+}
+
+
+#btnStop::disabled {
+	background: transparent;
+	color: transparent;
+}
+
+/*********************************************************************************/
+/*********************************************************************************/
+/************************************** LABEL ************************************/
+/*********************************************************************************/
+/*********************************************************************************/
+
+QLabel {
+	font-family: "Arial", Helvetica, sans-serif;
+	color: black;
+    font-weight: bold;
+	font-size: 17px; 
+}
+
+#getNombre, #getCarrera, #getCede, #getCentro, #getCodigo,
+#getSituacion, #getUltimoCiclo, #getPromedio, #getAdmicion {
+	text-decoration: underline;
+}
+
+#lblTurbo::disabled {
+	color: transparent;
+}
+
+/*********************************************************************************/
+/*********************************************************************************/
+/*********************************** COMBO BOX ***********************************/
+/*********************************************************************************/
+/*********************************************************************************/
+
+
+QComboBox {
+	background: white;
+	color: #1D222F;
+	font: 14px;
+	border-radius: 6px;
+	border: 2px solid #1D222F;
+	padding-left: 7px;
+}
+
+QComboBox QAbstractItemView {
+	/*items*/
+	background: white;
+    selection-background-color: #1D222F;
+    color: #1D222F;
+}
+
+
+#comboBoxCarreras {
+	background: #1D222F;
+	color: white;
+	border: none;
+	border-bottom: 1px solid grey;
+	border-radius: none;
+}
+
+#comboBoxCarreras QAbstractItemView {
+	/*items*/
+	background: transparent;
+    selection-background-color: transparent;
+    color: grey;
+}
+
+QComboBox::drop-down { image: url(img/drop-b.png);
+	subcontrol-origin: padding;
+    subcontrol-position: top right;
+    width: 14px;
+    margin-right: 10px;
+}
+
+#comboBoxCarreras::drop-down { image: url(img/drop-w.png); }
+
+
+/*********************************************************************************/
+/*********************************************************************************/
+/*********************************** LINE EDIT ***********************************/
+/*********************************************************************************/
+/*********************************************************************************/
+
+QLineEdit {
+	background: transparent;
+	color: black;
+	border: none;
+	border-bottom: 2px solid black;
+	font-size: 18px;
+	padding-left: 5px;
+	border-top: none;
+	text-align: center;
+}
+
+/*********************************************************************************/
+/*********************************************************************************/
+/*********************************** CHECK BOX ***********************************/
+/*********************************************************************************/
+/*********************************************************************************/
+
+
+
+#checkBoxFlash {
+	color: black;
+	font-weight: bold;
+}
+
+/*********************************************************************************/
+/*********************************************************************************/
+/*********************************** WIDGET TAB **********************************/
+/*********************************************************************************/
+/*********************************************************************************/
+
+QTabBar::tab, QTabWidget {
+	width: 0; height: 0; margin: 0; padding: 0; border: none;
+	/**/
+}
+
+/*********************************************************************************/
+/*********************************************************************************/
+/********************************* TABLE WIDGET **********************************/
+/*********************************************************************************/
+/*********************************************************************************/
+
+
+QTableWidget {
+	color: white;
+	background: transparent;
+	border: 1px solid #1D222F;
+	padding: 2px;
+}
+
+QHeaderView::section {
+	/*enumerado y parte superior*/
+    background: transparent;
+    color: #1D222F;
+    font-weight: bold;
+    border: none;
+}
+
+QHeaderView::section::checked {
+	color: white;
+}
+
+QTableCornerButton::section {
+	/*esquina superior izquierda*/
+	background: transparent;
+}
+
+QTableView::item:selected {
+	/*item seleccionado*/
+	background: white;
+	color: black;
+	font-size: 16px;
+	font-weight: bold;
+}
+
+QTableWidget::disabled {
+	color: transparent;
+	background: transparent;
+}
+
+QHeaderView::section::disabled {
+	/*enumerado y parte superior*/
+    color: transparent;
+    background: transparent;
+    border: none;
+    height: 0px;
+    width: 0px;
+
+}
+
+QTableView::item::disabled {
+	/*item seleccionado*/
+	color: transparent;
+	background: transparent;
+}
+
+
+
+/*********************************************************************************/
+/*********************************************************************************/
+/*********************************** SCROLL BARR *********************************/
+/*********************************************************************************/
+/*********************************************************************************/
+
+QScrollBar:horizontal {
+	/*barra*/
+    border: none;
+    background: transparent;
+    height: 15px;
+    margin: 2px 13px 0 25px;
+}
+QScrollBar::handle:horizontal {
+	/*barra*/
+    background: #1D222F;
+    min-width: 20px;
+}
+QScrollBar::add-line:horizontal {
+	/*lado derecho*/
+    border: none;
+    background: none;
+    width: 10px;
+    subcontrol-position: right;
+    subcontrol-origin: margin;
+}
+QScrollBar::sub-line:horizontal {
+	/*lado izquierdo*/
+	border: none;
+    background: none;
+    width: 18px;
+    subcontrol-position: left;
+    subcontrol-origin: margin;
+}
+QScrollBar:left-arrow:horizontal, QScrollBar::right-arrow:horizontal {
+    border: none;
+    border-radius: 5px;
+    width: 10px;
+    height: 10px;
+    background: #1D222F;
+}
+QScrollBar::add-page:horizontal, QScrollBar::sub-page:horizontal {
+	/*fondo de la barra*/
+    background: transparent;
+}
+
+
+QScrollBar:vertical {
+	/*barra*/
+    border: none;
+    background: transparent;
+    width: 15px;
+    margin: 25px 0px 15px 2px;
+}
+QScrollBar::handle:vertical {
+	/*barra*/
+    background: #1D222F;
+    min-height: 20px;
+}
+QScrollBar::add-line:vertical {
+	/*lado inferior*/
+    border: none;
+    background: none;
+    height: 14px;
+    subcontrol-position: bottom;
+    subcontrol-origin: margin;
+}
+QScrollBar::sub-line:vertical {
+	/*lado superior*/
+	border: none;
+    background: none;
+    height: 20px;
+    padding-top: 4px;
+    subcontrol-position: top;
+    subcontrol-origin: margin;
+}
+QScrollBar::up-arrow:vertical, QScrollBar::down-arrow:vertical {
+    border: none;
+    border-radius: 5px;
+    width: 10px;
+    height: 10px;
+    background: #1D222F;
+    margin-left: 2px;
+}
+QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical {
+	/*fondo de la barra*/
+    background: transparent;
+}

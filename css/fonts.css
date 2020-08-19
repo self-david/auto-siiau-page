@@ -1,9 +1,0 @@
-@font-face {
-  font-family: 'MyFont';
-  src: url(../fonts/Lemonada-Variable.ttf); /* IE9 Compat Modes */
-}
-
-
-.font-app {
-	font-family: myFont;
-}
